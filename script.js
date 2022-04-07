@@ -1,7 +1,7 @@
 //document.getElementById("team").innerHTML = "";
 
 
-/*const cards = [
+const cards = [
     {
         immagine: 'img/wayne-barnett-founder-ceo.jpg',
         titolo: 'Wayne Barnett',
@@ -35,7 +35,7 @@
         nome: 'Barbara Ramos'
     },
 ];
-*/
+
 let teamcard = document.createElement("div");
 teamcard.setAttribute("class", "team-card");
 let selezione = document.getElementById("team");
@@ -45,35 +45,34 @@ teamcontainer.setAttribute("class", "team-card");
 //teamcontainer.append(teamcard);
 
 selezione.append(teamcard);
-
-// for(let i= 0; i < cards.length; i++ ){
-//     let cont1 = document.createElement("div");
-//     cont1.setAttribute("class", "team-card");
-//     let cont2 = document.createElement("div");
-//     cont2.setAttribute("class", "card-image");
-//     let foto = document.createElement("img");
-//     foto.setAttribute("src"(cards[i].immagine));
-
+ for(let i= 0; i < cards.length; i++ ){
+   let cont1 = document.createElement("div");
+     cont1.setAttribute("class", "team-card");
+   let cont2 = document.createElement("div");
+   cont2.setAttribute("class", "card-image");
+    let foto = document.createElement("img");
+    foto.setAttribute("src"(cards[i].immagine));
 
 
 
 
 
 
-//     let cont3 = document.createElement("div");
-//     cont3.setAttribute("class","card-text");
-//     cont3.append(cont2);
-//     let nome = document.createElement("h3");
-//     nome.innerText((cards[i].nome));
-//     let lavoro = document.createElement("p");
-//     lavoro.innerText((cards[i].testo))
+
+    let cont3 = document.createElement("div");
+     cont3.setAttribute("class","card-text");
+     cont3.append(cont2);
+   let nome = document.createElement("h3");
+    nome.innerText((cards[i].nome));
+     let lavoro = document.createElement("p");
+     lavoro.innerText((cards[i].testo))
 
 
 
 
 
 
-//     contenitore.append(cont1);
+//    contenitore.append(cont1);
 //     cont1.append(cont2);
 //     cont2.append(foto);
 // }

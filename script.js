@@ -32,8 +32,8 @@ function stampaTeam(){
         <div class="team-card">
         <div class="card-image">
           <img
-            src="img/${cards[i].immagine}barbara-ramos-graphic-designer.jpg"
-            alt="Wayne Barnett"
+            src="img/${cards[i].immagine}"
+            alt="${cards[i].nome}"
           />
         </div>
         <div class="card-text">

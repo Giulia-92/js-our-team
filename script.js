@@ -3,7 +3,6 @@ const cards = [
     {
         immagine: 'wayne-barnett-founder-ceo.jpg',titolo: 'Wayne Barnett',nome: 'Founder & CEO'
     },
-
     {
         immagine: 'angela-caroll-chief-editor.jpg',titolo: 'Chief Editor',nome: 'Angela Caroll'
     },
@@ -20,14 +19,14 @@ const cards = [
         immagine: 'barbara-ramos-graphic-designer.jpg',titolo: 'Graphic Designer', nome: 'Barbara Ramos'
     },
 ];
-console.log(cards);
+//console.log(cards);
 
 const teamContainer = document.querySelector('.team-container');
 //console.log('team-container')
 function stampaTeam(){
-    let item;
+    let item = '';
     for(let i= 0; i < cards.length; i++ ){
-        console.log(cards[i]);
+        
         item +=  ` 
         <div class="team-card">
         <div class="card-image">
@@ -38,7 +37,7 @@ function stampaTeam(){
         </div>
         <div class="card-text">
           <h3>${cards[i].nome}</h3>
-          <p>${cards[i].titolo}Founder & CEO</p>
+          <p>${cards[i].titolo}</p>
         </div>
         </div> 
         ` 
